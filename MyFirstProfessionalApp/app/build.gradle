@@ -22,7 +22,7 @@ android {
     }
     buildTypes {
         release {
-            buildConfigField "String", "BASE_URL", "\"https://randomuser.me/api/\""
+            buildConfigField "String", "TYPE", "\"relase\""
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.config
@@ -30,7 +30,7 @@ android {
             resValue "string", "build", "release"
         }
         sandbox {
-            buildConfigField "String", "BASE_URL", "\"https://randomuser.me/api/\""
+            buildConfigField "String", "TYPE", "\"sandbox\""
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.config
@@ -38,7 +38,7 @@ android {
             resValue "string", "build", "sandbox"
         }
         develop {
-            buildConfigField "String", "BASE_URL", "\"https://randomuser.me/api/\""
+            buildConfigField "String", "TYPE", "\"develop\""
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.config
