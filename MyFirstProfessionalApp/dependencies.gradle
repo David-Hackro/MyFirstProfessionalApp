@@ -1,0 +1,15 @@
+ext{
+
+    butterknifeVersion = '8.2.1'
+
+    butterknifeDependencies = [
+            butterknife: "com.jakewharton:butterknife:${butterknifeVersion}"
+    ]
+
+    daggerVersion = '2.9'
+
+    daggerDependencies = [
+            dagger   : "com.google.dagger:dagger:${daggerVersion}"
+    ]
+
+}

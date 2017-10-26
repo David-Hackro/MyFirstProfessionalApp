@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
 
 android {
     signingConfigs {
@@ -26,6 +27,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.config
             debuggable false
+            resValue "string", "build", "release"
         }
         sandbox {
             buildConfigField "String", "BASE_URL", "\"https://randomuser.me/api/\""
@@ -33,12 +35,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.config
             debuggable true
+            resValue "string", "build", "sandbox"
         }
         develop {
             buildConfigField "String", "BASE_URL", "\"https://randomuser.me/api/\""
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.config
+            resValue "string", "build", "develop"
         }
     }
 }
@@ -48,7 +52,12 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    compile butterknifeDependencies.butterknife
+    compile daggerDependencies.dagger
+
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.2.1'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.9'
 }
