@@ -39,9 +39,9 @@
 
 | Title | Video | Commit | Date Publish |
 | ------ | ------ | ------ | ------ |
-| #1 - Introduction Course | https://www.youtube.com/watch?v=LoN8XxB7Fus | https://goo.gl/8mU6Gy| 10/13/2017 |
-| #2 - Build Variant | https://www.youtube.com/watch?v=vgkSjeMThaQ | https://goo.gl/8mU6Gy| 10/14/2017 |
-| #3 - ≠≠≠In process≠≠≠ | ≠≠≠In process≠≠≠  | ≠≠≠In process≠≠≠ | 10/17/2017 |
+| #1 - Introduction Course | https://www.youtube.com/watch?v=LoN8XxB7Fus | https://goo.gl/8mU6Gy| published |
+| #2 - Build Variant | https://www.youtube.com/watch?v=vgkSjeMThaQ | https://goo.gl/8mU6Gy| published |
+| #3 - Dependencies | https://www.youtube.com/watch?v=EI6mM1jl-QQ  | https://goo.gl/hjFGrH | published |
 | #4 - ≠≠≠In process≠≠≠  | ≠≠≠In process≠≠≠ | ≠≠≠In process≠≠≠ | 10/20/2017 |
 | #5 - ≠≠≠In process≠≠≠  | ≠≠≠In process≠≠≠ | ≠≠≠In process≠≠≠ | 10/23/2017 |
 | #6 - ≠≠≠In process≠≠≠  | ≠≠≠In process≠≠≠ | ≠≠≠In process≠≠≠ | 10/26/2017 |
